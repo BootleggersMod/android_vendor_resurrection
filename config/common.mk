@@ -87,10 +87,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/Wallpaper/Wallpaper.apk:system/app/Wallpaper/Wallpaper.apk
 
-# DeskClock
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/DeskClock/DeskClock.apk:system/app/DeskClock/DeskClock.apk
-
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
@@ -184,8 +180,6 @@ PRODUCT_PACKAGES += \
     ResurrectionStats \
     Trebuchet \
     MusicFX \
-    CMFileManager \
-    Eleven \
     LockClock \
     CMSettingsProvider \
     ExactCalculator \
@@ -333,3 +327,4 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 -include vendor/cm/config/partner_gms.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
+$(call prepend-product-if-exists, vendor/bootleggers/booty.mk)
