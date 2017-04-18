@@ -30,7 +30,7 @@ echo -e ${blu}" 〉 2- Unofficial "${txtrst}${red}"  ︱ For the unofficial buil
 echo -e "";
 echo -e ${blu}" 〉 3- Nightly "${txtrst}${red}"     ︱ Only for the official daily builds by the maintainers"${txtrst}
 echo -e "";
-echo -e ${blu}" 〉 4- Weekly "${txtrst}${red}"      ︱ Only for the official weekly builds by the maintainers"${txtrst}
+echo -e ${blu}" 〉 4- Shishu "${txtrst}${red}"      ︱ Only for the Shishu builds made personally by ElDainosor"${txtrst}
 echo -e "";
 echo -e ${blu}" 〉 5- Release "${txtrst}${red}"     ︱ Only for the official releases by the RR-Team"${txtrst}
 echo -e "";
@@ -80,8 +80,8 @@ fi
 if [ "$askvariant" == "4" ]
 then
 echo -e "";
-echo -e ${blu}" ▪ Building weekly variant "${txtrst}
-export RR_BUILDTYPE=Weekly
+echo -e ${blu}" ▪ Building shishu variant "${txtrst}
+export RR_BUILDTYPE=Shishu
 echo -e "";
 echo -e "";
 $normal
